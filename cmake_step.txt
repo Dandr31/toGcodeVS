@@ -1,0 +1,15 @@
+1.Edit CMakeLists.txt in source dir
+CMAKE_MINIMUM_REQUIRED(VERSION 2.6)
+PROJECT(mDemo) 
+AUX_SOURCE_DIRECTORY(. SRC_LIST)
+ADD_EXECUTABLE(mDemo ${SRC_LIST})
+
+2. command line
+>mkdir build
+>cd build
+build>cmake -G "MinGW Makefiles" ../ 
+build>mingw32-make
+build> .exe
+
+3. info 
+cmake -G //G:generators
